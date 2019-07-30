@@ -1,0 +1,402 @@
+\documentclass[11pt]{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=1.5cm,bmargin=1.5cm,lmargin=1.5cm,rmargin=1.5cm}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{color}
+%\usepackage{babel}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage[authoryear]{natbib}
+
+% Hide or show money
+\usepackage{comment}
+\newif\ifshow
+%\showfalse
+\showtrue
+\ifshow
+    \includecomment{money}
+\else
+    \excludecomment{money}
+\fi
+
+
+% Change some distances in bibliography:
+    \setlength{\bibsep}{3pt}
+    \setlength{\bibhang}{7pt}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=false,
+ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]
+ {hyperref}
+\hypersetup{urlcolor=blue}
+\usepackage{breakurl}
+%Tweaking lists:
+\usepackage{enumitem}
+
+\usepackage{lastpage}
+%\headsep 10pt
+\definecolor{blue}{RGB}{12, 8, 129}
+% \usepackage{titlesec}
+
+\begin{document}
+
+\begin{center}
+\Large \sc Emilia Tjernstr\"{o}m \hfill University of Wisconsin, Madison \\
+\end{center}
+\vspace{-.3cm}
+\noindent\rule{\textwidth}{1pt}
+\parbox[t]{.45\textwidth}{\begin{flushleft}
+    \vspace{-.5cm}
+    \begin{footnotesize}  
+    \href{https://www.lafollette.wisc.edu/sites/tjernstrom/}{Website} \\
+    \href{mailto:tjernstroem@wisc.edu}{tjernstroem@wisc.edu} \\
+    \vspace{.35cm}
+    Last updated on: \today \\
+    \end{footnotesize} 
+\end{flushleft}} \hfill
+\parbox[t]{.45\textwidth}{\begin{flushright}
+    \begin{footnotesize}    
+    \vspace{-.5cm}
+    Robert M. La Follette School of Public Affairs \\
+    Agricultural and Applied Economics \\
+    1225 Observatory Drive \\
+    Madison, WI 53706-1211 \\
+    \end{footnotesize}
+\end{flushright}} \\
+\noindent\rule{\textwidth}{1pt}
+
+\subsection*{\sc Employment}
+
+\hspace{20pt}\textbf{University of Wisconsin, Madison}\\
+\hspace*{27pt}Assistant Professor, Robert M. La Follette School of
+Public Affairs \emph{(2015\textendash )}\\
+\hspace*{27pt}Assistant professor, Agricultural and Applied Economics \emph{(2016\textendash )}\\
+\hspace*{27pt}Center for Demography and Ecology: Faculty affiliate\emph{
+(2016\textendash )}\\
+\hspace*{27pt}UW Center for Financial Security: Faculty affiliate \emph{(2017\textendash )}\\
+\hspace*{27pt}African Studies Program: Faculty affiliate \emph{(2018\textendash )}
+
+\subsection*{\sc Education}
+
+\hspace*{20pt}\textbf{Ph.D. University of California, Davis,} Agricultural \& Resource Economics \emph{(2015)} \\
+\hspace*{20pt}\textbf{Lund~University}, Graduate student, School
+of Economics and Management \emph{(2008-2009)} \\
+\hspace*{20pt}\textbf{B.A. Colby College}, Economics, (Mathematics
+minor)\emph{, Summa Cum Laude (2006)}
+
+\subsection*{\sc Journal publications}
+
+\nocite{tjernstrom_differences_2008}
+\nocite{tjernstrom_rational_2008}
+\nocite{tjernstrom_identifying_2013}
+\nocite{barriga_cabanillas_fitting_2018}
+\nocite{brown_natural_2018}
+\nocite{carter_heterogeneous_2019}
+\nocite{michler_money_2019}
+\hspace*{20pt}%
+\begin{minipage}[t]{0.9\textwidth}%
+\vspace{-.9cm}
+    \centering
+    \renewcommand\refname{}
+        \bibliographystyle{ecta_YEAR}
+        \bibliography{my_pubs}
+\end{minipage}
+
+\vspace{-.3cm}
+\subsection*{\sc Working papers}
+
+\begin{itemize}[itemsep=0pt, leftmargin=20pt]
+\item [-]Learning from Others in Heterogeneous Environments (being revised)
+\item [-]Learning by (Virtually) Doing: Experimentation and Belief Updating in Smallholder Agriculture \\ 
+\emph{with Travis Lybbert, Rachel Hern\'{a}ndez Frattarola, and Juan Sebastian Correa}\\
+Revisions requested, JEBO
+\item [-]{Media and Motivation: the Effect of
+Performance Pay on Writers and Content} \\
+\emph{with Ivan Balbuzanov and Jared Gars}
+\item [-]{Can Smallholder Extension Transform African Agriculture?}\\
+%Previous version circulated under ``Information, Credit, and Inputs: the Impacts and Mechanisms of a Program to Raise Smallholder Productivity''
+\emph{with Joshua Deutschmann, Maya Duru and Kim Siegal} \\
+NBER Working Paper No. 26054
+\item [-]{Seeds of Uncertainty: Information, Subjective Expectations, and Technology Adoption}\\
+\emph{with Jared Gars}
+\item [-]Filling a Niche: the Impacts of a Local Seed Company on Maize Productivity in Kenya\\
+\emph{with Samuel Bird, Michael Carter, Travis Lybbert}
+\end{itemize}
+
+\subsection*{\sc Work in progress}
+
+\begin{itemize}[itemsep=0pt, leftmargin=20pt]
+\item [-]{A Group Random Coefficient Approach to Modeling Heterogeneity in Technology Adoption}\\
+\emph{with Oscar Barriga Cabanillas, Dalia
+Ghanem, Travis Lybbert, Jeffrey D. Michler, and Aleksander Michuda}
+\item [-]{Arrested Development: the Inefficiencies
+of Electoral Cycles in Infrastructure Projects}\\
+\emph{with Evan Morier}
+\item [-]Nonlinear Pricing Complexity and Consumer Behavior\\
+\emph{with \href{http://jwdeutschmann.com/}{Joshua Deutschmann} and Jeff Michler}
+\item [-]{The dirt on dirt: soil characteristics
+and variable fertilizer returns in Kenyan maize systems}\\
+\emph{with Michael Carter and Travis Lybbert}
+\item [-]When intentions matter\textendash identifying the prevalence and source of poor-quality inputs in Kenya\\
+\emph{with Jose Clavijo and Travis Lybbert}
+\item[-] Income Volatility and Technology Choice \\
+\textit{with Rachel Hern\'{a}ndez  Frattarola}
+\end{itemize}
+
+\subsection*{\sc Other publications \& reports}
+
+\begin{itemize}[itemsep=0pt, leftmargin=20pt]
+\item [-]Carter, Michael, Mary K. Mathenge, Sam Bird, Travis J. Lybbert,
+Timothy Njagi, and Tjernstr\"{o}m, Emilia. 2017. \textquotedblleft \href{https://basis.ucdavis.edu/sites/g/files/dgvnsk466/files/2017-02/AMA\%20Brief\%20-\%20WSC\%20maize\%20productivity\%20-\%202017-01.pdf}{Local Seed Company Fills a Niche to Increase Maize Productivity in Kenya}.\textquotedblright{}
+BASIS Brief No. 2017\textendash 01.
+\item [-]Tjernstr\"{o}m, Emilia, Michael Carter, and Travis J. Lybbert. 2017. \href{https://basis.ucdavis.edu/sites/g/files/dgvnsk466/files/2017-02/AMA\%20Brief\%20-\%20soil\%20variation\%20-\%202017-03.pdf}{Diverse Soils and Inputs Challenge Recommendations to Maize Farmers in Kenya.} BASIS Brief No. 2017-03 
+\item [-]Tjernstr\"{o}m, Emilia. 2016. Learning for Adopting:
+Signals, Similarity and Seeds: Social Learning in the Presence of
+Imperfect Information and Heterogeneity. In \href{http://impact.cgiar.org/sites/default/files/pdf/Learning\%20for\%20adoption_monograph.pdf}{Technology Adoption in Developing Country Agriculture}. Policy Briefs from the Workshop Organized by Ferdi and SPIA, Clermont-Ferrand.
+\item [-]Tjernstr\"{o}m, Emilia. 2015. ``\href{http://basis.ucdavis.edu/sites/g/files/dgvnsk466/files/2017-01/Tjernstrom-Brief.pdf}{Learning-by-doing vs. Learning-from-others: Heterogeneity Matters}.''
+BASIS Brief No. 2015-01
+\item [-]Carter, Michael R., Travis J. Lybbert, Mary K. Mathenge, and
+Emilia Tjernstr\"{o}m. 2014. ``\href{http://basis.ucdavis.edu/wp-content/uploads/2014/04/Carter_WesternSeed1.pdf}{Spurring Technological Innovation and Poverty Reduction? Evaluating the Impact of a New Seed Market Actor in Kenya}.''
+BASIS Brief No. 2014-04
+\item [-]Carter, Michael R., Emilia Tjernstr\"{o}m, and Patricia Toledo.
+2012. ``\href{http://basis.ucdavis.edu/sites/g/files/dgvnsk466/files/2017-02/Nicaragua_FINAL2.pdf}{Investing in Small-Farm Productivity: the Nicaragua MCC Compact}.'' BASIS Brief No. 2012-6
+\item [-]Carroll, Christine, Diane Charlton, and Emilia Tjernstr\"{o}m. 2012.
+\href{http://giannini.ucop.edu/media/are-update/files/articles/V15N6_4.pdf}{Price Premiums for Organic Strawberries}. \emph{Agricultural and Resource Economics Update}, 15(6):12\textendash 14.
+\item [-]Tjernstr\"{o}m, Emilia. 2009. \href{http://nationalekonomi.se/filer/pdf/37-3-et.pdf}{Kunnigt och (o)kontroversiellt om R\aa  varumarknaden}''
+(Book Review of \textquoteleft \emph{Handbook of Primary Commodities
+in the Global Economy}\textquoteright ). \emph{Ekonomisk Debatt,}
+37(3):85\textendash 88. 
+\end{itemize}
+
+\subsection*{\sc Grants }
+
+\begin{itemize}[itemsep=0pt, leftmargin=20pt]
+\item [-]2019-2020: Graduate School Fall Research Competition Grant, UW\textendash Madison 
+\begin{money}
+(\$63,519) 
+\end{money}
+\\ \emph{Pilot: Air Pollution, Human Capital, and Cognition}
+
+\item [-]2017-2018: IFREE Small Grants Program
+\begin{money}
+(\$9,800)
+\end{money}
+with Ivan Balbuzanov \& Jared Gars \\
+\emph{Media and Motivation: the Effect of Performance Pay on Writers and Content}
+
+
+\item [-]2017-2018: University of Chicago
+\begin{money}
+(\$2,857)
+\end{money}
+with Angelino Viceisza \\
+\emph{An Experiment on Framing and Referrals to Boost Impact Investing
+}
+
+\item [-]2017-2018: Economic Development and Institutions (EDI) pilot
+grant
+\begin{money}
+(\$18,027)
+\end{money}
+with Nicole Bonoff \\
+\emph{Constructing Compliance: Reducing Tax Evasion Among Market Traders in Ghana} 
+
+\item [-]2017-2018: PEDL Exploratory Research Grant 
+\begin{money}
+(\$22,980) 
+\end{money}
+with Travis Lybbert \\
+\emph{Baseline for an Information Intervention in the Agro-inputs Market in Kenya};
+
+\item [-]2017-2018: Graduate School Fall Research Competition Grant,
+UW\textendash Madison
+\begin{money}
+(\$46,536)
+\end{money}
+\\ \emph{Making sense of Mother Nature: Farmer Learning in the Lab}
+
+% \item [-]2016-2017: JPAL Governance Initiative Travel Grant
+% \begin{money}
+% (\$8,200)
+% \end{money}
+% with Thiemo Fetzer \\
+% \emph{Double Digital Dividends: can Privately Funded Information Infrastructure Boost Firm Formality}? 
+
+\item [-]2016-2017: Kohl Competition Award
+\begin{money}
+(\$47,100)
+\end{money}
+with Travis Lybbert \\
+\emph{Testing Supply Chains for Fraudulent Fertilizer to Improve Regulation,
+Policy and Market Performance for Agro-inputs in Sub-Saharan Africa};
+ 
+\item [-]2016: 3ie \& AGRA
+\begin{money}
+(\$20,000)
+\end{money}
+with Karl Hughes, Sarah Janzen, Judith Oduoul, and Laura Schechter\\
+\emph{Impact Evaluation of AGRA\textquoteright s Financial Inclusion Programmes for Smallholder Farmers in Kenya}
+
+\item [-]2016-2020: NSF CRISP Type 2: Collaborative Research Grant
+\begin{money}
+(\$1,686,426)
+\end{money}
+with Xiaopeng Li, Xin Wang, Kaibo Liu, Feng Ju, Jianhui Wang \\
+\emph{Harnessing interdependency for resilience: creating an ``energy sponge'' with cloud electric vehicle sharing}
+
+\item [-]2016-2017: Daniel Louis and Genevieve Rustvold Goldy Fellowship
+\begin{money}
+(\$6,500) 
+\end{money}
+
+\item [-]2016-2017: Global Center for Food Systems
+\begin{money}
+(\$96,000)
+\end{money}
+with Travis Lybbert \\
+\emph{Bringing FarmVille to the Tropics: App-based Simulations to Build Farmers' Understanding of Customized Fertilizer Recommendations}
+
+\item [-]2015-2016: Development Impact Lab (DIL) Innovate Grant
+\begin{money}
+(\$25,000)
+\end{money}
+with Travis Lybbert \\
+\emph{Counterfeit Seed: Using Genetic Markers to Quantify the Prevalence of Counterfeit Maize Seed in Western Kenya}
+
+\item [-]2013-2016: USAID BASIS Assets and Market Access Innovation Lab
+\begin{money}
+(\$424,000)
+\end{money}
+with Michael Carter, Travis Lybbert and Mary Mathenge \\
+\emph{Evaluating the Socio-economic Impacts of Western Seed's Hybrid Maize Program}
+
+\item [-]2013-2016: Agricultural Technology Adoption Initiative
+\begin{money}
+(\$345,000)
+\end{money}
+with Michael Carter, Travis Lybbert and Mary Mathenge
+\emph{Impact of Mid-altitude Hybrid Maize in Western Kenya} 
+
+\item [-]2013-2016: Bill and Melinda Gates Foundation
+\begin{money}
+(\$286,000)
+\end{money}
+with Michael Carter, Travis Lybbert and Mary Mathenge \\
+\emph{Impact Evaluation of Western Seed Company's Hybrid Maize Program}
+
+\item [-]2006-2007: Watson Fellowship, Thomas J. Watson Foundation
+\begin{money}
+(\$25,000)
+\end{money}
+\emph{Nomad's Land \textendash{} Development, Conservation and Nomads}
+\end{itemize}
+
+\subsection*{\sc Awards \& Fellowships}
+
+\begin{itemize}[itemsep=-.1cm, leftmargin=20pt]
+\item [-]Association for Public Policy Analysis and Management, 40 for 40 Fellowship, 2018
+\item [-]Taylor Hibbard award for Excellence in Graduate Teaching, 2018 (based on student vote)
+\item [-]Gordon A. King Best Dissertation Award, UC Davis Agricultural \& Resource Economics (2015)
+\item [-]Henry A. Jastro Graduate Research Fellowship, UC Davis (2012-2013)
+\item [-]Departmental Fellowship, Agricultural and Resource Economics, UC Davis (2009-2010)
+\item [-]Phi Beta Kappa, Colby College (2016)
+\end{itemize}
+
+\subsection*{\sc Invited seminars \& panels}
+\begin{itemize}[itemsep=.9pt, leftmargin=20pt]
+    \item[]\textbf{2019:} University of Sydney (Economics); Lund University (Economics); University of Evansville (Economics); University of Illinois Urbana-Champaign (Economics)
+    \item[]\textbf{2018:} University of California, Davis (Ag econ); Michigan State University (Economics); University of Copenhagen (IFRO)
+    \item[]\textbf{2017:} BASIS / Feed the Future conference ``\href{https://basis.ucdavis.edu/past-event/enhancing-smallholder-productivity-kenya-evidence-randomized-controlled-trial-new-seed}{Enhancing Smallholder Productivity in Kenya: Evidence from a Randomized Controlled Trial of New Seed Varieties}''; EDI annual conference; Chicago Council on Global Affairs \& MSU Alliance for African Partnership panel on the intersection of youth and agriculture in Africa; Feed the Future/USAID Agrilinks Webinar: `` \href{http://Soil variation and why it matters}{Soil variation and why it matters}'' (\href{https://www.youtube.com/watch?v=XKBpPuR8P4Q}{recording}) 
+    \item[]\textbf{2016:} Paris School of Economics; FERDI: \href{http://www.ferdi.fr/en/event/agricultural-innovation-learning-adopting}{Learning for adopting}; What Works Global Summit 2016; University of North Dakota (Economics); USAID Global Development Lab
+    \item[]\textbf{2015:} Oregon State University (Ag econ); Universit\'{e} Laval (Economics); University of Wisconsin\textendash Madison (Public Affairs); Georgetown (GHD); Ohio State University (Ag econ); University of Copenhagen (Ag econ); University of San Francisco; DIME Impact Evaluation Workshop; University of Minnesota (Ag econ); University of Illinois Urbana-Champaign (Ag econ)
+    \item[]\textbf{2014:} iHub Nairobi; Colby College (Economics); Bowdoin College (Economics); BASIS/I4 Meeting
+\end{itemize}
+
+\subsection*{\sc Conferences \& workshops}
+\begin{itemize}[itemsep=.9pt, leftmargin=20pt]
+    \item[]\textbf{2019:} MIEDC; CESifo Workshop on the Economics of the Gig Economy; CSAE 2019 conference; NBER Transforming Rural Africa conference 
+    \item[]\textbf{2018:} MIEDC; ICABR; ABCA (Annual Bank Conference on Africa); Nordic Conference on Behavioral and Experimental Economics; Advances in Field Experiments; AAEA annual meeting; Northeast Universities Development Consortium (NEUDC); HAMOC
+    \item[]\textbf{2017:} PacDev; MIEDC; ICABR; WGAPE annual meeting, AAEA annual meeting, SIFE (University of Chicago Summer Institute on Field Experiments); MGAPE @ Northwestern (Midwest Group in African Political Economy)
+    \item[]\textbf{2016:} Global Center for Food Systems Innovation Grantee Workshop; CSAE; MIEDC; AAEA Annual meeting; Nordic Conference on Behavioral and Experimental Economics 
+    \item[]\textbf{2015:} CSAE; UC Berkeley Development lunch; MWIEDC; AAEA Annual Meeting; NEUDC
+    \item[]\textbf{2013:} AAEA session at ASSA
+   \item[]\textbf{2012:} UC Davis Development Workshop; MCC Impact Evaluation Learning Event; UC Berkeley Development Lunch; Nordic Conference in Development Economics; GARESC; NEUDC
+\end{itemize}
+
+
+\subsection*{\sc Work experience}
+\begin{itemize}[leftmargin=20pt]
+    \itemsep-.1cm
+    \item[]Monitoring \& evaluation consultant, Millennium Challenge Corporation (2012)
+    \item[] Teaching assistant, Environmental and Resource Economics, Lund University (2008)
+    \item[]Economics teacher, United World College Costa Rica (2007-2008)    
+\end{itemize}
+
+\subsection*{\sc Teaching}
+\begin{itemize}[leftmargin=20pt]
+    \itemsep0cm
+    \item[-]\textbf{University of Wisconsin, Madison. La Follette School of Public Affairs}
+    \itemsep-.1cm
+    \item[] International cost-benefit analysis. Masters level. 2015, 2016, 2017, 2018, 2019
+    \item[] International policy analysis. Masters level. 2016
+    \item[] Independent study. Masters level. 2019 (1 student), 2018 (2 students), 2017 (3 students)
+    \itemsep.1cm
+    \item[-]\textbf{University of Wisconsin, Madison. Agricultural \& Applied Economics}
+    \itemsep-.1cm
+    \item[] Applied microeconometrics using replication. PhD field course. 2016, 2017
+    \item[] Economic and Agricultural Development of Africa. Undergraduate. 2018, 2019
+    
+\end{itemize}
+
+\subsection*{\sc Advising}
+
+\begin{itemize}[leftmargin=20pt]
+    \itemsep-.1cm
+    \item[] Rachel Frattarola, PhD AAE (2018) Dissertation committee member
+    \item[] Justin Delorit, PhD Civil \& Environmental Engineering (2018) Dissertation committee member
+    \item[] Norihiko Matsuda, PhD AAE (2018) Dissertation committee member
+    \item[] Jessica Zhu, PhD AAE (2019) Dissertation committee member
+    \item[]	Jens Engelmann, PhD AAE (2019) Dissertation committee member
+    \item[] Naoki Nishimura, PhD AAE, Dissertation committee member
+    \item[]	Evan Morier, PhD Political Science, Dissertation committee member
+    \item[]	Joshua Deutschmann, PhD AAE Dissertation committee member
+    \item[]	Eduardo Cenci, PhD AAE, Dissertation committee member
+\end{itemize}
+
+
+\subsection*{\sc University service}
+\begin{itemize}[leftmargin=20pt]
+    \itemsep-.1cm
+    \item[] Development workshop coordinator, Department of Ag \& Applied Economics, UW-Madison (2018 \& 2019)
+    \item[] Placement committee, Department of Agricultural \& Applied Economics, UW-Madison (2018-2019)
+    \item[] Curriculum \& Student Services, La Follette School of Public Affairs, UW-Madison (2018-2019)
+    \item[] Family Impact \& Committee Connect, La Follette School of Public Affairs, UW-Madison (2018-2019)
+    \item[] Placement director, Department of Agricultural \& Applied Economics, UW-Madison (2017-2018)
+    \item[] Diversity \& inclusion committee, La Follette School of Public Affairs, UW-Madison (2017-2018)
+    \item[] Admissions committee, La Follette School of Public Affairs, UW-Madison (2016-2017, 2017-2018)
+    \item[] Development workshop coordinator, Department of Ag \& Applied Economics, UW-Madison (Fall 2017)
+    \item[] Bromley Prize review committee, Department of Ag \& Applied Economics, UW-Madison (2016-2017)
+    \item[] Graduate committee, Department of Agricultural \& Applied Economics, UW-Madison (2016-2017)
+    \item[] Student diversity \& inclusion liaison, La Follette School of Public Affairs, UW-Madison (2015-2017)
+\end{itemize}
+
+\subsection*{\sc Outside service}
+
+\begin{itemize}[itemsep=.9pt, leftmargin=20pt]
+    \item[]\textbf{Journal refereeing:} Agricultural Economics, American Journal of Agricultural Economics, China Economic Review, Ecological Economics, European Journal of Political Economy, Food Policy, Journal of Agricultural Economics, Journal of Consumer Affairs, Journal of Development Economics, Journal of Development Studies, Journal of Economic Behavior and Organization, PNAS
+    \item[]\textbf{External reviewer \& conference reviews:} Master\textquoteright s Thesis Award Committee, AAEA 2019-2020; Abstract reviewer for behavioral economics section, AAEA 2018; Abstract reviewer for international development section, AAEA 2018; Scientific committee, 2018 Midwest International Economic Development Conference; Grant reviewer, 3ie, Ag Insurance Thematic Window, 2017; External reviewer, 3ie, Agricultural Innovation Thematic Window, 2017; Abstract reviewer for behavioral economics section, AAEA 2017; External reviewer, CGIAR Standing Panel on Impact Assessment (SPIA) 2017; External reviewer, 3ie, Agricultural Innovation Thematic Window, 2016; Scientific committee, 2017 Midwest International Economic Development Conference; Abstract reviewer for Annual World Bank Conference on Land and Poverty, 2016
+\end{itemize}
+
+\subsection*{\sc Other information}
+\begin{itemize}[itemsep=.9pt, leftmargin=20pt]
+    \item[]\textbf{Languages:} Swedish (Native), English, French, Spanish (Fluent)
+    \item[]\textbf{Associations:} American Economic Association, Agricultural and Applied Economics Association, Economic Science Association, Australasian Agricultural and Natural Resource Association
+\end{itemize}
+
+\end{document}
